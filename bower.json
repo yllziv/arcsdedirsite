@@ -1,0 +1,22 @@
+{
+  "name": "arcsdedir",
+  "version": "0.0.0",
+  "authors": [
+    "ziv <yll.ziv@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "underscore": "~1.8.3",
+    "requirejs": "~2.1.20",
+    "jstree": "~3.2.1"
+  }
+}

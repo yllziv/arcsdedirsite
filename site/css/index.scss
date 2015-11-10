@@ -1,0 +1,66 @@
+$splitcolor: #505ca8;
+
+body {
+  width: 95%;
+}
+
+.myhead {
+  text-align: center;
+}
+
+#contentLeft {
+}
+
+#contentRight {
+  border-color: $splitcolor;
+  border-left-style: solid;
+  border-left-width: 2px;
+
+}
+
+.imgbox {
+  padding-top: 10px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 1px;
+}
+
+.imgli {
+  list-style-type: none;
+  position: relative;
+  display: inline-block; // 添加这一行后，文字才会位于图片正下面中间
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  width:90px;
+  height:90px;
+  .imgfile {
+    position: relative;
+    text-align:center;
+    vertical-align:middle;
+    margin-right: 20px;
+    margin-left:20px;
+    margin-top: 10px;
+    width: 43px;
+  }
+  .imgtext {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: -2px;
+    line-height:15px;
+    width:90px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+  }
+}
+
+.imgli:hover {
+  border-color: lighten($splitcolor, 10%);
+}
+
+.clickimg {
+  border-color: darken($splitcolor, 10%);
+  background-color: #9acfea;
+}

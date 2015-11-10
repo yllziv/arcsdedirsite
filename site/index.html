@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh_CN">
+<head>
+    <meta charset="GBK">
+    <title>ArcSDE虚拟目录</title>
+</head>
+<body>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/lib/require.js" data-main="js/main.js" charset="GBK" defer async="true"></script>
+<div class="row">
+    <div class="col-xs-6" id="contentLeft">
+        <h2 class="myhead">文件目录</h2>
+        <div class="btn-group btn-group-justified " role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button id="openfile" type="button" class="btn btn-default">打开
+                    <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="foldfile" class="btn btn-default">折叠
+                    <span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="refreshfile" class="btn btn-default">刷新
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="savefile" type="button" class="btn btn-default">保存
+                    <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div id="jstreeDiv"></div>
+    </div>
+    <div class="col-xs-6" id="contentRight">
+        <div class="headRight">
+            <h2 class="myhead">ArcSDE虚拟目录</h2>
+            <div class="btn-group btn-group-justified " role="group" aria-label="...">
+                <div class="btn-group" role="group">
+                    <button id="moveall" type="button" class="btn btn-default">移动
+                        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button  id="refreshall" type="button" class="btn btn-default">刷新
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="chooseall" type="button" class="btn btn-default">全选
+                        <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="sortall" type="button" class="btn btn-default">排列
+                        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="imgbox">
+        <ul class="picStream">
+            <!--<li class="imgli">-->
+                <!--<img class="imgfile" src="./img/file.png">-->
+                <!--<p class="imgtext">fdsddfgfdgfdgfdgfdgdffs</p>-->
+            <!--</li>-->
+        </ul></div>
+    </div>
+</div>
+</body>
+</html>

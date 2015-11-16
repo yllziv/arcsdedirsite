@@ -20,6 +20,7 @@ require(['MyFunction','jquery', 'jstree'], function (MyFunction,$) {
     $(document)
         .ready(function(){ // 初始化事件
             MyFunction.resizewindow(); // 窗口改变时响应式布局
+
             MyFunction.initJstree(); //初始化jstree
             MyFunction.getAllLayersFromArcSDE();// 读取ArcSDE数据
         })
@@ -39,11 +40,11 @@ require(['MyFunction','jquery', 'jstree'], function (MyFunction,$) {
             var checkedFunction = function () {
                 $("#chooseall").children("span").attr("class", "glyphicon glyphicon-check");
                 $("li.imgli").addClass("clickimg");
-            }
+            };
             var uncheckedFunction = function () {
                 $("#chooseall").children("span").attr("class", "glyphicon glyphicon-unchecked");
                 $("li.imgli").removeClass("clickimg");
-            }
+            };
             chooseall % 2 == 0 ?
                 checkedFunction() :
                 uncheckedFunction();

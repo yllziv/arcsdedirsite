@@ -1,13 +1,5 @@
-body {
-  width: 95%; }
-
 .myhead {
   text-align: center; }
-
-#contentRight {
-  border-color: #505ca8;
-  border-left-style: solid;
-  border-left-width: 2px; }
 
 .imgbox {
   padding-top: 10px;
@@ -44,8 +36,14 @@ body {
     overflow: hidden; }
 
 .imgli:hover {
-  border-color: #707abb; }
+  border-color: #d7d9da;
+  cursor: pointer; }
 
 .clickimg {
-  border-color: #404985;
+  border-color: #a3a7a8;
   background-color: #9acfea; }
+
+button {
+  background-color: #00b3ee; }
+
+/*# sourceMappingURL=index.css.map */

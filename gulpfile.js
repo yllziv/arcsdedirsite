@@ -1,14 +1,11 @@
 var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
-    watch = require('gulp-watch'),
-    sass = require('gulp-sass');
-
+    watch = require('gulp-watch');
 gulp.task('watch',function(){
     livereload.listen();
     gulp.watch('site/*.html').on('change',livereload.changed);
     gulp.watch('site/js/*.js').on('change',livereload.changed);
-    gulp.watch('site/css/*').on('change',livereload.changed);
-    gulp.watch('./site/css/*.scss', ['sass']);
+    gulp.watch('site/css/*.css').on('change',livereload.changed);
 });
 
 gulp.task('buildlib',function(){
@@ -20,18 +17,9 @@ gulp.task('buildlib',function(){
         .pipe(gulp.dest('./site/js/lib'));
     gulp.src('./bower_components/requirejs/require.js')
         .pipe(gulp.dest('./site/js/lib'));
-    gulp.src('./bower_components/bootstrap/dist/css/bootstrap.css')
-        .pipe(gulp.dest('./site/css'));
-    //gulp.src('./bower_components/jstree/dist/themes/default/style.css')
-    //    .pipe(gulp.dest('./site/css'));
     gulp.src('./bower_components/jstree/dist/jstree.js')
         .pipe(gulp.dest('./site/js/lib'));
 });
 
-gulp.task('sass', function () {
-    gulp.src('./site/css/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./site/css'));
-});
 
-gulp.task('default',['watch','buildlib','sass']);
+gulp.task('default',['watch','buildlib']);

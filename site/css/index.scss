@@ -1,21 +1,11 @@
-$splitcolor: #505ca8;
+$splitcolor: #bdc0c1;
 
-body {
-  width: 95%;
+html body{
+  //background-color: #00b3ee;
 }
 
 .myhead {
   text-align: center;
-}
-
-#contentLeft {
-}
-
-#contentRight {
-  border-color: $splitcolor;
-  border-left-style: solid;
-  border-left-width: 2px;
-
 }
 
 .imgbox {
@@ -28,7 +18,7 @@ body {
 .imgli {
   list-style-type: none;
   position: relative;
-  display: inline-block; // 添加这一行后，文字才会位于图片正下面中间
+  display: inline-block; // text under in picture
   margin-left: 5px;
   margin-bottom: 5px;
   border-width: 2px;
@@ -58,9 +48,14 @@ body {
 
 .imgli:hover {
   border-color: lighten($splitcolor, 10%);
+  cursor:pointer;
 }
 
 .clickimg {
   border-color: darken($splitcolor, 10%);
   background-color: #9acfea;
+}
+
+button{
+  background-color: #00b3ee;
 }
